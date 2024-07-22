@@ -1,7 +1,7 @@
 const carSelect = document.getElementById('car-select');
-const url = 'http://localhost:3000/cars'; 
+const url = "db.json"; // Use db.json directly
 
-// Improved fetch with error handling
+// Improves fetch plus error handling
 fetch(url)
   .then(response => {
     if (!response.ok) {
@@ -28,7 +28,7 @@ function populateCarSelect(cars) {
   cars.forEach(car => {
     const option = document.createElement('option');
     option.value = car.name; // Set the value to the car name
-    option.textContent = car.name + ' - $' + car.price + ' per day'; // Display car name and price
+    option.textContent = `${car.name} - $${car.price} per day`; // Display car name and price
     carSelect.appendChild(option);
   });
 }
@@ -46,7 +46,7 @@ rentForm.addEventListener('submit', function(event) {
   alert(`You have rented ${selectedCar} for ${rentalDuration} days!`);
 });
 
-// Similar event listener for review form submission (assuming form ID is 'review-form')
+// Similar event listener for review form submission
 const reviewForm = document.getElementById('review-form');
 reviewForm.addEventListener('submit', function(event) {
   event.preventDefault();

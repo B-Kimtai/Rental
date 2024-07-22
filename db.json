@@ -1,0 +1,9 @@
+{
+  "cars": [
+    { "name": "Toyota Camry", "price": 30 },
+    { "name": "Honda Accord", "price": 35 },
+    { "name": "Ford Mustang", "price": 50 },
+    { "name": "Chevrolet Malibu", "price": 28 },
+    { "name": "Nissan Altima", "price": 32 }
+  ]
+}

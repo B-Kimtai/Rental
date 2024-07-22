@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rent a Car - BumbleCraft Rentals</title>
+    <link rel="stylesheet" href="/style.css">
+</head>
+<body class="bg-rentals">
+    <header>
+        <h1>BumbleCraft Rentals</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="rent-review.html">Rent & Review</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <main>
+        <section id="rent-car">
+            <h2>Rent a Car</h2>
+            <form id="rent-form">
+                <label for="car-select">Choose a car:</label>
+                <select id="car-select" required>
+                    <option value="">Select a car</option>
+                    <option value="car1">Car Model 1</option>
+                    <option value="car2">Car Model 2</option>
+                    <option value="car3">Car Model 3</option>
+                </select>
+
+                <label for="rental-duration">Rental Duration (days):</label>
+                <input type="number" id="rental-duration" min="1" required>
+
+                <button type="submit">Rent Now</button>
+            </form>
+        </section>
+
+        <section id="customer-review">
+            <h2>Leave a Review</h2>
+            <form id="review-form">
+                <label for="review-name">Your Name:</label>
+                <input type="text" id="review-name" placeholder="Your Name" required>
+
+                <label for="review-text">Your Review:</label>
+                <textarea id="review-text" placeholder="Write your review here..." required></textarea>
+
+                <button type="submit">Submit Review</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 BumbleCraft Rentals</p>
+    </footer>
+
+    <script src="/script.js"></script>
+</body>
+</html>
